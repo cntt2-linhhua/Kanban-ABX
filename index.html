@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="nav-header">
+        <div class="nav-left">
+            <div class="nav-vector">
+                <a href="#"><i class="fa fa-th-large"></i></a>
+            </div>
+            <div class="nav-pro"><a href="#">Project name</a></div>
+            <div class="icon-vector"><i class="fa fa-angle-right"></i></div>
+            <div class="nav-board"><a href="#">Board name</a></div>
+        </div>
+        <div class="nav-right">
+            <a href="#">User name</a>
+            <a href="#"><i class="fa fa-user"></i></a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="frame">
+            <div class="frame-left">
+                <ul class="filter-left">
+                    <li class="filterItem">
+                        <div class="itemF">
+                            <a href="#">
+                                <span>Assigness</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="filterItem">
+                        <div class="itemF">
+                            <a href="#">
+                                <span>Status</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="filterItem">
+                        <div class="itemF">
+                            <a href="#">
+                                <span>Tag</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="filterItem">
+                        <div class="itemF">
+                            <a href="#">
+                                <span>Due date</span>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="frame-right">
+                <ul class="filter-right">
+                    <li class="filterItem task task-star">
+                        <div class="itemF">
+                            <a href="#" class="itemR">
+                                <span>My Task</span>
+                                <i class="fa fa-star"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="filterItem task">
+                        <div class="itemF">
+                            <a href="#" class="itemR urgent">
+                                <span>Urgent Task</span>
+                                <i class="fa fa-hourglass"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="taskContent">
+                <ul class="column">
+                    <li class="task-column">
+                        <div class="group-title">
+                            <input type="button" value="2">
+                            <h6>TODO</h6>
+                        </div>
+                        <div class="task-list">
+                            <ul class="taskList-content">
+                                <li class="task-frame">
+                                    <input type="text" id="frame1" placeholder="Write some thing here">
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Setup Directus server</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Refactor foundation</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for QueryBar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="taskContent">
+                <ul class="column">
+                    <li class="task-column">
+                        <div class="group-title">
+                            <input type="button" value="29">
+                            <h6>DOING</h6>
+                        </div>
+                        <div class="task-list">
+                            <ul class="taskList-content">
+                                <li class="task-frame">
+                                    <input type="text" id="frame1" placeholder="Write some thing here">
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Setup Directus server</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Refactor foundation</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for QueryBar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="taskContent">
+                <ul class="column">
+                    <li class="task-column">
+                        <div class="group-title">
+                            <input type="button" value="2">
+                            <h6>REVIEW</h6>
+                        </div>
+                        <div class="task-list">
+                            <ul class="taskList-content">
+                                <li class="task-frame">
+                                    <input type="text" id="frame1" placeholder="Write some thing here">
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Setup Directus server</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Refactor foundation</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for QueryBar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="taskContent">
+                <ul class="column">
+                    <li class="task-column">
+                        <div class="group-title">
+                            <input type="button" value="2">
+                            <h6>DONE</h6>
+                        </div>
+                        <div class="task-list">
+                            <ul class="taskList-content">
+                                <li class="task-frame">
+                                    <input type="text" id="frame1" placeholder="Write some thing here">
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Setup Directus server</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Refactor foundation</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for QueryBar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="task-item">
+                                    <div class="tag-list">
+                                        <ul class="tag">
+                                            <li class="tag-item"><span>feature</span></li>
+                                            <li class="tag-item"><span>cms</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="task-title">
+                                        <h6>Create specification for Querybar</h6>
+                                    </div>
+                                    <div class="task-bottom">
+                                        <div class="assignee">
+                                            <span>@marsch</span>
+                                        </div>
+                                        <div class="due-date">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>today</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
